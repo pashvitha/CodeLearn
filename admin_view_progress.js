@@ -12,9 +12,9 @@ async function loadProgress() {
     try {
 
         // Fetch all data
-        let progressRes = await fetch("https://codelearn-oln7.onrender.com/progress");
-        let usersRes = await fetch("https://codelearn-oln7.onrender.com/users");
-        let challengesRes = await fetch("https://codelearn-oln7.onrender.com/challenges");
+        let progressRes = await fetch("https://codelearn-0ln7.onrender.com/progress");
+        let usersRes = await fetch("https://codelearn-0ln7.onrender.com/users");
+        let challengesRes = await fetch("https://codelearn-0ln7.onrender.com/challenges");
 
         if (!progressRes.ok || !usersRes.ok || !challengesRes.ok) {
             throw new Error("Something went wrong");

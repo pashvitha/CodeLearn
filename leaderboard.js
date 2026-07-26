@@ -1,13 +1,13 @@
 async function loadLeaderboard() {
 
-    let res = await fetch("https://codelearn-oln7.onrender.com/users")
+    let res = await fetch("https://codelearn-0ln7.onrender.com/users")
     if (!res.ok) {
         throw new Error("Something went wrong");
     }
 
     let users = await res.json();
 
-    let res1 = await fetch("https://codelearn-oln7.onrender.com/progress");
+    let res1 = await fetch("https://codelearn-0ln7.onrender.com/progress");
     if (!res1.ok) {
         throw new Error("Something went wrong");
     } 

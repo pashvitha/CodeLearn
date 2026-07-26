@@ -95,7 +95,7 @@ async function set_local_storaage() {
 
         console.log("Fetching users...");
 
-        let res = await fetch("https://codelearn-oln7.onrender.com/users");
+        let res = await fetch("https://codelearn-0ln7.onrender.com/users");
 
         console.log(res);
 
@@ -143,7 +143,7 @@ async function new_object(){
         })
     };
 
-    let res = await fetch("https://codelearn-oln7.onrender.com/users", options);
+    let res = await fetch("https://codelearn-0ln7.onrender.com/users", options);
 
     if (res.ok) {
         await set_local_storaage();

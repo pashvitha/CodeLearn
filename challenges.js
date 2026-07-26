@@ -7,7 +7,7 @@ let sort = document.getElementById("sort");
 
 let allchallenges=[];
 async function fetch_chaln(){
-    let res= await fetch("https://codelearn-oln7.onrender.com/challenges");
+    let res= await fetch("https://codelearn-0ln7.onrender.com/challenges");
     if(!res.ok){
         throw new Error("something went wrong");
     }
