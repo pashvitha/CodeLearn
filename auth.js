@@ -153,55 +153,7 @@ async function new_object(){
         alert("Registration Failed");
     }
 }
-    // fetch("http://localhost:3000/users",options)
-    // .then(res=>{ 
-    //     // console.log("Response:", res);
-    //     // console.log("Status:", res.status);
-    //     // console.log("OK:", res.ok);
-    //     // if(res.ok){
-    //     //     set_local_storaage();
-    //     //     alert("Registration Successful");
-    //     //     console.log("Redirecting...");
-    //     //     window.location.href = "login.html";
-    //     // }
-
-    //     if (res.ok) {
-    //     // console.log("Inside if");
-
-    //     // alert("Registration Successful");
-
-    //     // console.log("About to redirect...");
-    //     await set_local_storaage();
-        
-    //     window.location.href = "login.html";
-    //     } else {
-    //         console.log("Request failed");
-    //     }
-
-
-    // }).catch(error=>console.log(error));
-
-
-
-
-// read data from local storage 
-// async function get_local_storage() {  
-//     let users1=JSON.parse(localStorage.getItem("users")); 
-//     let mail2=document.getElementById("Email");
-//     let filterdata=users1.filter(f_mail=>f_mail.email==mail2.value) 
-    
-    
-//     if(filterdata.length>0){ 
-//         alert("email already exists"); 
-
-//     }  
-//     else{
-//         new_object(); 
-        
-//     }
-
    
-// }
 
 async function get_local_storage() {
 

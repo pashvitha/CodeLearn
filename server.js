@@ -12,13 +12,14 @@ app.use(cors({
 }));
 
 app.use(express.json());
-app.use(express.json());
+// app.use(express.json());
 
 const DB_PATH = path.join(__dirname, "user.json");
 
 async function readDB() {
     return await fs.readJson(DB_PATH);
 }
+
 
 async function writeDB(data) {
     await fs.writeJson(DB_PATH, data, { spaces: 2 });
@@ -108,6 +109,36 @@ app.get("/challenges", async (req, res) => {
     } catch (err) {
 
         res.status(500).json({ error: err.message });
+
+    }
+
+});
+
+app.get("/challenges/:id", async (req, res) => {
+
+    try {
+
+        const data = await readDB();
+
+        const id = Number(req.params.id);
+
+        const challenge = data.challenges.find(c => c.id === id);
+
+        if (!challenge) {
+            return res.status(404).json({
+                message: "Challenge not found"
+            });
+        }
+
+        res.json(challenge);
+
+    }
+
+    catch (err) {
+
+        res.status(500).json({
+            error: err.message
+        });
 
     }
 
@@ -205,6 +236,33 @@ app.delete("/challenges/:id", async (req, res) => {
 
 });
 
+app.delete("/users/:id", async (req, res) => {
+
+    try {
+
+        const data = await readDB();
+
+        const id = Number(req.params.id);
+
+        data.users = data.users.filter(user => user.id !== id);
+
+        await writeDB(data);
+
+        res.json({
+            message: "User deleted successfully"
+        });
+
+    }
+
+    catch (err) {
+
+        res.status(500).json({
+            error: err.message
+        });
+
+    }
+
+});
 // ===================== PROGRESS =====================
 
 // Get Progress
