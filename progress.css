@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+    padding:40px;
+}
+
+/* ================= Heading ================= */
+
+body::before{
+    content:"Your Progress";
+    display:block;
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:35px;
+}
+
+/* ================= Table ================= */
+
+#table1{
+    width:100%;
+    border-collapse:collapse;
+    background:#1e293b;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+/* Header */
+
+#table1 th{
+    background:#334155;
+    color:#f8fafc;
+    padding:18px;
+    font-size:17px;
+    text-align:center;
+    border-bottom:1px solid #475569;
+}
+
+/* Rows */
+
+#table1 td{
+    padding:18px;
+    text-align:center;
+    color:#e2e8f0;
+    border-bottom:1px solid #334155;
+}
+
+/* Alternate Rows */
+
+#table1 tr:nth-child(even){
+    background:#243244;
+}
+
+/* Hover */
+
+#table1 tr:hover{
+    background:#2d3d53;
+}
+
+/* ================= Status Colors ================= */
+
+.completed{
+    color:#22c55e;
+    font-weight:600;
+}
+
+.attempted{
+    color:#facc15;
+    font-weight:600;
+}
+
+.pending{
+    color:#ef4444;
+    font-weight:600;
+}
+
+/* ================= Score ================= */
+
+.score{
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    body::before{
+        font-size:32px;
+    }
+
+    #table1{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    #table1 th,
+    #table1 td{
+        padding:14px;
+    }
+}

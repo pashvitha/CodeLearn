@@ -1,0 +1,390 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Pashvitha Mathi",
+      "email": "pashvitha@gmail.com",
+      "password": "Password123@"
+    },
+    {
+      "id": 2,
+      "fullName": "Rahul Sharma",
+      "email": "rahul.sharma@gmail.com",
+      "password": "Welcome2025!"
+    },
+    {
+      "id": 4,
+      "fullName": "Arjun Kumar",
+      "email": "arjun.kumar@gmail.com",
+      "password": "StrongPass9$"
+    },
+    {
+      "id": 5,
+      "fullName": "Sneha Patel",
+      "email": "sneha.patel@outlook.com",
+      "password": "CodeLearn12@"
+    },
+    {
+      "id": 6,
+      "fullName": "Likitha M",
+      "email": "likitha123@gmail.com",
+      "password": "Password1234@"
+    },
+    {
+      "id": 7,
+      "fullName": "Vikram Singh",
+      "email": "vikram.singh@gmail.com",
+      "password": "Password12345@"
+    },
+    {
+      "id": 8,
+      "fullName": "Neha Verma",
+      "email": "neha.verma@gmail.com",
+      "password": "Welcome1234@"
+    },
+    {
+      "id": 11,
+      "fullName": "Rohan Gupta",
+      "email": "rohan.gupta@gmail.com",
+      "password": "Welcome1234@"
+    },
+    {
+      "id": 13,
+      "fullName": "Meera Nair",
+      "email": "meera.nair@gmail.com",
+      "password": "Welcome1234@"
+    },
+    {
+      "id": 14,
+      "fullName": "Aditya Joshi",
+      "email": "aditya.joshi@gmail.com",
+      "password": "Welcome1234@"
+    },
+    {
+      "id": 15,
+      "fullName": "Nikhil Mehta",
+      "email": "nikhil.mehta@gmail.com",
+      "password": "Welcome1234@"
+    },
+    {
+      "id": 17,
+      "fullName": "Sahithi Kalanapu",
+      "email": "sahithi1234@gmail.com",
+      "password": "Javascript2@"
+    },
+    {
+      "id": 18,
+      "fullName": "Harsha Vardhan",
+      "email": "harsha.vardhan@gmail.com",
+      "password": "Welcome1234@"
+    },
+    {
+      "fullName": "Aisha Khann",
+      "email": "aisha.khan1@gmail.com",
+      "password": "Welcome1234@",
+      "id": 19
+    }
+  ],
+  "challenges": [
+    {
+      "id": 1,
+      "title": "Sum of Two Numbers",
+      "difficulty": "Easy",
+      "topic": "Arrays",
+      "description": "Return the sum of two integers."
+    },
+    {
+      "id": 2,
+      "title": "Reverse String",
+      "difficulty": "Easy",
+      "topic": "Strings",
+      "description": "Reverse the given string."
+    },
+    {
+      "id": 3,
+      "title": "Palindrome",
+      "difficulty": "Medium",
+      "topic": "Strings",
+      "description": "Check whether a string is palindrome."
+    },
+    {
+      "title": "Merge Sorted Arrays",
+      "difficulty": "Hard",
+      "topic": "Arrays",
+      "description": "Merge two sorted arrays into one sorted array.",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "title": "Binary Search",
+      "difficulty": "Easy",
+      "topic": "Arrays",
+      "description": "Find an element using binary search."
+    },
+    {
+      "id": 6,
+      "title": "Detect Cycle in Linked List",
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "description": "Determine whether a linked list contains a cycle."
+    },
+    {
+      "title": "Reverse Linked List",
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "description": "Reverse a singly linked list.",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "title": "Maximum Depth of Binary Tree",
+      "difficulty": "Easy",
+      "topic": "Tree",
+      "description": "Find the maximum depth of a binary tree."
+    },
+    {
+      "id": 9,
+      "title": "Level Order Traversal",
+      "difficulty": "Medium",
+      "topic": "Tree",
+      "description": "Perform level-order traversal of a binary tree."
+    },
+    {
+      "id": 10,
+      "title": "Number of Islands",
+      "difficulty": "Hard",
+      "topic": "Graph",
+      "description": "Count the number of islands in a 2D grid using DFS or BFS."
+    },
+    {
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "topic": "Linked List",
+      "description": "        Reverse a singly linked list and return the new head.",
+      "id": 11
+    },
+    {
+      "title": "Preorder Traversal",
+      "difficulty": "Medium",
+      "topic": "Tree",
+      "description": "print preorder traversal of tree",
+      "id": 12
+    },
+    {
+      "title": "children sum of binary tree",
+      "difficulty": "Medium",
+      "topic": "tree",
+      "description": "        calcualte children sum of every node",
+      "id": 13
+    }
+  ],
+  "progress": [
+    {
+      "id": 1,
+      "userId": 1,
+      "challengeId": 1,
+      "status": "Solved",
+      "score": 100,
+      "submittedAt": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "challengeId": 2,
+      "status": "Solved",
+      "score": 100,
+      "submittedAt": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "challengeId": 1,
+      "status": "Solved",
+      "score": 100,
+      "submittedAt": "2026-07-19"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "challengeId": 3,
+      "status": "Solved",
+      "score": 80,
+      "submittedAt": "2026-07-18"
+    },
+    {
+      "userId": 18,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-20",
+      "id": 5
+    },
+    {
+      "userId": 18,
+      "challengeId": 3,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-20",
+      "id": 6
+    },
+    {
+      "userId": 18,
+      "challengeId": 2,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-20",
+      "id": 7
+    },
+    {
+      "userId": 18,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-20",
+      "id": 8
+    },
+    {
+      "userId": 11,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-20",
+      "id": 9
+    },
+    {
+      "userId": 11,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-21",
+      "id": 10
+    },
+    {
+      "userId": 11,
+      "challengeId": 2,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-21",
+      "id": 11
+    },
+    {
+      "userId": 4,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-21",
+      "id": 12
+    },
+    {
+      "userId": 17,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-21",
+      "id": 13
+    },
+    {
+      "userId": 6,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-22",
+      "id": 14
+    },
+    {
+      "userId": 6,
+      "challengeId": 2,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-22",
+      "id": 15
+    },
+    {
+      "userId": 17,
+      "challengeId": 4,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-22",
+      "id": 16
+    },
+    {
+      "userId": 6,
+      "challengeId": 10,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-22",
+      "id": 17
+    },
+    {
+      "userId": 5,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-23",
+      "id": 18
+    },
+    {
+      "userId": 19,
+      "challengeId": 5,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-24",
+      "id": 19
+    },
+    {
+      "userId": 5,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-24",
+      "id": 20
+    },
+    {
+      "userId": 13,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-26",
+      "id": 21
+    },
+    {
+      "userId": 6,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-26",
+      "id": 22
+    },
+    {
+      "userId": 6,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-26",
+      "id": 23
+    },
+    {
+      "userId": 6,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-26",
+      "id": 24
+    },
+    {
+      "userId": 6,
+      "challengeId": 1,
+      "status": "solved",
+      "score": 100,
+      "submittedAt": "2026-07-26",
+      "id": 25
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "email": "admin@codelearn.com",
+      "password": "Admin@123"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title> 
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <h1>DASHBOARD</h1>   
+    <h2>Your Statistics</h2>
+
+    <div id="stats">
+        <p>Total Challenges : <span id="totalChallenge">0</span></p>
+
+        <p>Solved : <span id="solved">0</span></p>
+
+        <p>Attempted : <span id="attempted">0</span></p>
+
+        <p>Not Attempted : <span id="notAttempted">0</span></p>
+
+        <p>Total Score : <span id="score">0</span></p>
+    </div>
+
+    <div id="dashboard">
+    
+    </div>
+    <button type="button" onclick="window.location.href='challenges.html'">Challenges</button>
+    <button type="button" onclick="window.location.href ='progress.html'">Progress</button>     
+    <button type="button" onclick="window.location.href='leaderboard.html'">Leaderboard</button> 
+    <button type="button" onclick="logout()">Logout</button> 
+<script src="./dashboard.js"></script> 
+</body>     
+</html>        

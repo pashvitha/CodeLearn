@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+    padding:40px;
+}
+
+/* ================= SEARCH ================= */
+
+#search{
+    display:block;
+    width:100%;
+    max-width:650px;
+    margin:0 auto 35px;
+    padding:15px 18px;
+    background:#1e293b;
+    color:white;
+    border:1px solid #475569;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+#search::placeholder{
+    color:#94a3b8;
+}
+
+#search:focus{
+    border-color:#94a3b8;
+    box-shadow:0 0 10px rgba(255,255,255,.08);
+}
+
+/* ================= FILTERS ================= */
+
+label{
+    color:#e2e8f0;
+    font-size:15px;
+    font-weight:600;
+    margin-right:10px;
+}
+
+select{
+    background:#1e293b;
+    color:white;
+    border:1px solid #475569;
+    border-radius:8px;
+    padding:10px 15px;
+    margin-right:20px;
+    margin-bottom:35px;
+    cursor:pointer;
+    outline:none;
+    transition:.3s;
+}
+
+select:hover{
+    background:#293548;
+}
+
+select:focus{
+    border-color:#94a3b8;
+}
+
+/* ================= TABLE ================= */
+
+#chalen{
+    width:100%;
+    margin-top:20px;
+}
+
+/* Header */
+
+.challenge-header{
+
+    display:grid;
+    grid-template-columns:3fr 2fr 1.5fr 1fr;
+
+    align-items:center;
+
+    padding:18px 22px;
+
+    background:#334155;
+
+    color:white;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border:1px solid #475569;
+
+    margin-bottom:12px;
+}
+
+/* Row */
+
+.challenge-row{
+
+    display:grid;
+
+    grid-template-columns:3fr 2fr 1.5fr 1fr;
+
+    align-items:center;
+
+    padding:20px 22px;
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    border-radius:10px;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+}
+
+.challenge-row:hover{
+
+    background:#293548;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+}
+
+.challenge-row span{
+
+    color:#f8fafc;
+
+    font-size:15px;
+}
+
+/* ================= DIFFICULTY ================= */
+
+.easy{
+    color:#22c55e !important;
+    font-weight:600;
+}
+
+.medium{
+    color:#facc15 !important;
+    font-weight:600;
+}
+
+.hard{
+    color:#ef4444 !important;
+    font-weight:600;
+}
+
+/* ================= BUTTON ================= */
+
+.challenge-row button{
+
+    width:110px;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#475569;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.challenge-row button:hover{
+
+    background:#64748b;
+}
+
+/* ================= PAGINATION ================= */
+
+#prev,
+#next{
+
+    margin-top:30px;
+
+    width:130px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#475569;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#prev:hover,
+#next:hover{
+
+    background:#64748b;
+}
+
+#pageno{
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    margin:0 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    body{
+        padding:20px;
+    }
+
+    .challenge-header{
+        display:none;
+    }
+
+    .challenge-row{
+        grid-template-columns:1fr;
+        gap:15px;
+        text-align:left;
+    }
+
+    .challenge-row button{
+        width:100%;
+    }
+
+    label{
+        display:block;
+        margin-bottom:8px;
+    }
+
+    select{
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    #search{
+        width:100%;
+    }
+}

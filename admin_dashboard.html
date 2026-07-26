@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_dashboard</title>
+    <link rel="stylesheet" href="./admin_dashboard.css">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <h2 id="welcome"></h2>
+    <div> 
+        <p>Total Users : <span id="totalUsers"></span></p>
+
+        <p>Total Challenges : <span id="totalChallenges"></span></p>
+
+        <p>Total Submissions : <span id="totalSubmissions"></span></p>
+
+        <p>Total Solved : <span id="totalSolved"></span></p> 
+
+        <button onclick="window.location.href='admin_manage_users.html'">
+            Manage Users
+        </button>
+
+        <button onclick="window.location.href='admin_manage_challanges.html'">Manage Challenges</button>
+
+        <button onclick="window.location.href='admin_view_progress.html'">View Progress</button>
+
+        <button onclick="logout()">Logout</button>
+
+    </div>
+    <script src="./admin_dashboard.js"></script>
+    
+    
+        
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Challenges</title>
+    <link rel="stylesheet" href="./admin_manage_challanges.css">
+</head>
+<body>
+
+    <h1>Manage Challenges</h1>
+
+    <h2>Add / Update Challenge</h2>
+
+    <form>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Challenge Title">
+
+        <br><br>
+
+        <select id="difficulty">
+            <option value="">Select Difficulty</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+
+        <br><br>
+
+        <input
+            type="text"
+            id="topic"
+            placeholder="Topic">
+
+        <br><br>
+
+        <textarea
+            id="description"
+            rows="5"
+            cols="40"
+            placeholder="Challenge Description">
+        </textarea>
+
+        <br><br>
+
+        <button type="button" id="saveBtn" onclick="saveChallenge()">
+            Add Challenge
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>All Challenges</h2>
+
+    <table border="1" id="challengeTable">
+
+        <tr>
+            <th>S.No</th>
+            <th>Title</th>
+            <th>Difficulty</th>
+            <th>Topic</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <button onclick="goBack()">Back</button>
+
+    <script src="./admin_manage_challanges.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Login Heading */
+
+body::before{
+    content:"Login";
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:35px;
+    color:#f8fafc;
+}
+
+/* Labels */
+
+label{
+    display:block;
+    width:380px;
+    margin-bottom:18px;
+    color:#cbd5e1;
+    font-size:16px;
+    font-weight:500;
+}
+
+/* Input Fields */
+
+input{
+    width:100%;
+    margin-top:8px;
+    padding:14px;
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:10px;
+    color:white;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#94a3b8;
+}
+
+input:focus{
+    border-color:#64748b;
+    box-shadow:0 0 10px rgba(255,255,255,.08);
+}
+
+/* Login Button */
+
+button{
+    width:380px;
+    padding:14px;
+    margin-top:10px;
+    background:#475569;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#64748b;
+    transform:translateY(-2px);
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+    label,
+    button{
+        width:90%;
+    }
+
+}

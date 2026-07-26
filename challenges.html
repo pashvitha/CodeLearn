@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list of prblms</title>
+    <link rel="stylesheet" href="./challenges.css">
+</head>
+<body> 
+    <input
+    type="text"
+    id="search"
+    placeholder="Search challenges..."> 
+
+    <label for="level">choose filter</label>
+    
+    <select id="level"> 
+        <option value="All">All</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+
+    </select>  
+
+    <label for="topic">Choose Topic</label>
+
+    <select id="topic">
+        <option value="All">All</option>
+        <option value="Arrays">Arrays</option>
+        <option value="Strings">Strings</option>
+        <option value="Linked List">Linked List</option>
+        <option value="Tree">Tree</option>
+        <option value="Graph">Graph</option>
+    </select>
+
+    <label for="sort">sorting</label>
+
+    <select id="sort">
+        <option value="default">Default</option>
+        <option value="az">Title A-Z</option>
+        <option value="za">Title Z-A</option>
+        <option value="easyhard">Easy → Hard</option>
+        <option value="hardeasy">Hard → Easy</option>
+        
+    </select>
+
+
+    <div id="chalen">
+
+    </div>
+
+    <!-- pagination --> 
+     <button id="prev">Previous</button>
+     <span id="pageno">1</span>
+     <button id="next">Next</button>
+     
+
+
+    <script src="./challenges.js"></script>
+</body>
+</html> 

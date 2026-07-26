@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+    padding:40px;
+}
+
+/* ================= Heading ================= */
+
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:35px;
+}
+
+/* ================= Table ================= */
+
+#usersTable{
+    width:100%;
+    border-collapse:collapse;
+    background:#1e293b;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+#usersTable th{
+    background:#334155;
+    color:white;
+    padding:18px;
+    font-size:16px;
+    border-bottom:1px solid #475569;
+}
+
+#usersTable td{
+    padding:16px;
+    text-align:center;
+    color:#e2e8f0;
+    border-bottom:1px solid #334155;
+}
+
+#usersTable tr:nth-child(even){
+    background:#243244;
+}
+
+#usersTable tr:hover{
+    background:#2d3d53;
+    transition:.3s;
+}
+
+/* ================= Delete Button ================= */
+
+#usersTable button{
+    padding:9px 18px;
+    border:none;
+    border-radius:8px;
+    background:#dc2626;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+#usersTable button:hover{
+    background:#b91c1c;
+}
+
+/* ================= Back Button ================= */
+
+body > button{
+    display:block;
+    margin:35px auto 0;
+    width:180px;
+    padding:13px;
+    border:none;
+    border-radius:10px;
+    background:#475569;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+body > button:hover{
+    background:#64748b;
+    transform:translateY(-2px);
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    #usersTable{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    #usersTable th,
+    #usersTable td{
+        padding:14px;
+    }
+
+    body > button{
+        width:100%;
+    }
+
+}
