@@ -48,7 +48,7 @@ async function fetch_reg(){
     } 
     else{
         // alert("registration sucessfull");
-        get_local_storage();
+        await get_local_storage();
     }
 
 
@@ -66,28 +66,60 @@ async function fetch_reg(){
 //   http://localhost:3000/users 
 
 // put user details into local storage
-async function set_local_storaage(){
-    // let res= await fetch("http://localhost:3000/users");
+// async function set_local_storaage(){
+//     // let res= await fetch("http://localhost:3000/users");
 
-    let res= await  fetch("https://codelearn-oln7.onrender.com/users")
+//     let res= await  fetch("https://codelearn-oln7.onrender.com/users")
    
-    try{ 
+//     try{ 
 
-        if(!res.ok){
-            throw new Error("something went wrong")
-        }
-        let data=await res.json();
-        localStorage.setItem("users",JSON.stringify(data));
-        console.log(data);
+//         if(!res.ok){
+//             throw new Error("something went wrong")
+//         }
+//         let data=await res.json();
+//         localStorage.setItem("users",JSON.stringify(data));
+//         console.log(data);
 
-    }
-    catch(error){
-        console.log(error);
-    }
+//     }
+//     catch(error){
+//         console.log(error);
+//     }
     
 
 
-} 
+// } 
+
+async function set_local_storaage() {
+
+    try {
+
+        console.log("Fetching users...");
+
+        let res = await fetch("https://codelearn-oln7.onrender.com/users");
+
+        console.log(res);
+
+        if (!res.ok) {
+            throw new Error("Fetch failed");
+        }
+
+        let data = await res.json();
+
+        console.log("Fetched users:", data);
+
+        localStorage.setItem("users", JSON.stringify(data));
+
+        console.log("Saved successfully!");
+
+    }
+
+    catch (err) {
+
+        console.error("ERROR:", err);
+
+    }
+
+}
 set_local_storaage() 
 
 
@@ -153,23 +185,53 @@ async function new_object(){
 
 
 // read data from local storage 
-async function get_local_storage() {  
-    let users1=JSON.parse(localStorage.getItem("users")); 
-    let mail2=document.getElementById("Email");
-    let filterdata=users1.filter(f_mail=>f_mail.email==mail2.value) 
+// async function get_local_storage() {  
+//     let users1=JSON.parse(localStorage.getItem("users")); 
+//     let mail2=document.getElementById("Email");
+//     let filterdata=users1.filter(f_mail=>f_mail.email==mail2.value) 
     
     
-    if(filterdata.length>0){ 
-        alert("email already exists"); 
+//     if(filterdata.length>0){ 
+//         alert("email already exists"); 
 
-    }  
-    else{
-        new_object(); 
+//     }  
+//     else{
+//         new_object(); 
         
-    }
+//     }
 
    
+// }
+
+async function get_local_storage() {
+
+    let users1 = JSON.parse(localStorage.getItem("users"));
+
+    if (!users1) {
+
+        await set_local_storaage();
+
+        users1 = JSON.parse(localStorage.getItem("users")) || [];
+
+    }
+
+    let mail2 = document.getElementById("Email");
+
+    let filterdata = users1.filter(user =>
+        user.email === mail2.value.trim()
+    );
+
+    if (filterdata.length > 0) {
+
+        alert("Email already exists");
+
+    } else {
+
+        await new_object();
+
+    }
+
 }
 
-//======================================================================================== 
+// //======================================================================================== 
 
