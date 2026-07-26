@@ -11,19 +11,19 @@ name.innerText=`welcome, ${admin1.email}`;
 
 async function dashboardStats(){ 
     try{
-        let res1=await fetch("http://localhost:5000/users")
+        let res1=await fetch("https://codelearn-oln7.onrender.com/users")
         if(!res1.ok){
             throw new Error("something went wrong");
         }
         let users=await res1.json();
 
-        let res2=await fetch("http://localhost:5000/challenges");
+        let res2=await fetch("https://codelearn-oln7.onrender.com/challenges");
         if(!res2.ok){
             throw new Error("something went wrong");
         }
         let challenges=await res2.json(); 
 
-        let res3=await fetch("http://localhost:5000/progress");
+        let res3=await fetch("https://codelearn-oln7.onrender.com/progress");
         if(!res3.ok){
             throw new Error("something went wrong");
         }

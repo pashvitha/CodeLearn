@@ -7,7 +7,7 @@ if(!admin1){
 
 async function loadusers(){ 
     try{ 
-        let res=await fetch("http://localhost:5000/users");
+        let res=await fetch("https://codelearn-oln7.onrender.com/users");
         if(!res.ok){
             throw new Error("something went wrong");
         } 
@@ -39,7 +39,7 @@ async function deleteuser(id){
         return;
     }
     try{ 
-        let res=await fetch(`http://localhost:5000/users/${id}`,{
+        let res=await fetch(`https://codelearn-oln7.onrender.com/users/${id}`,{
             method:"DELETE"
         });
         if(!res.ok){

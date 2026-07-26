@@ -9,7 +9,7 @@ async function loadChallenges() {
 
     try {
 
-        let res = await fetch("http://localhost:5000/challenges");
+        let res = await fetch("https://codelearn-oln7.onrender.com/challenges");
 
         if (!res.ok) {
             throw new Error("Something went wrong");
@@ -65,11 +65,11 @@ async function saveChallenge(){
             topic,
             description
         }
-        let url = "http://localhost:5000/challenges";
+        let url = "https://codelearn-oln7.onrender.com/challenges";
         let method = "POST";
 
         if(editId != null){
-            url = `http://localhost:5000/challenges/${editId}`;
+            url = `https://codelearn-oln7.onrender.com/challenges/${editId}`;
             method = "PUT";
         }
         let options={
@@ -127,7 +127,7 @@ async function deleteChallenge(id) {
 
     try {
 
-        let res = await fetch(`http://localhost:5000/challenges/${id}`, {
+        let res = await fetch(`https://codelearn-oln7.onrender.com/challenges/${id}`, {
             method: "DELETE"
         });
 
@@ -154,7 +154,7 @@ async function editChallenge(id){
 
     try{
 
-        let res = await fetch(`http://localhost:5000/challenges/${id}`);
+        let res = await fetch(`https://codelearn-oln7.onrender.com/challenges/${id}`);
 
         if(!res.ok){ 
             throw new Error("Something went wrong");

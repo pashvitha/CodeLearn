@@ -5,7 +5,7 @@ async function adminlogin() {
         let emaill = document.getElementById("email");
         let pswd = document.getElementById("password");
 
-        let res = await fetch("http://localhost:5000/admins");
+        let res = await fetch("https://codelearn-oln7.onrender.com/admins");
 
         if (!res.ok) {
             throw new Error("Something went wrong");

@@ -1,7 +1,7 @@
 async function get_prblmid(){
     let id=JSON.parse(localStorage.getItem("prblms"));
     
-    let res= await fetch("http://localhost:5000/challenges");
+    let res= await fetch("https://codelearn-oln7.onrender.com/challenges");
     if(!res.ok){
         throw new Error("something went wrong");
     }
@@ -42,7 +42,7 @@ async function runcode() {
 
     try {
 
-        let res = await fetch("http://localhost:5000/run", {
+        let res = await fetch("https://codelearn-oln7.onrender.com/run", {
 
             method: "POST",
 
@@ -122,7 +122,7 @@ async function submitcode(){
             submittedAt:today.toISOString().split("T")[0]
         })
     };
-    let res=await fetch("http://localhost:5000/progress",options);
+    let res=await fetch("https://codelearn-oln7.onrender.com/progress",options);
     if(!res.ok){
         throw new Error ("some thing went wrong");
     } 

@@ -68,8 +68,8 @@ async function fetch_reg(){
 // put user details into local storage
 async function set_local_storaage(){
     // let res= await fetch("http://localhost:3000/users");
-    
-    let res= await  fetch("http://localhost:5000/users")
+
+    let res= await  fetch("https://codelearn-oln7.onrender.com/users")
    
     try{ 
 
@@ -111,7 +111,7 @@ async function new_object(){
         })
     };
 
-    let res = await fetch("http://localhost:5000/users", options);
+    let res = await fetch("https://codelearn-oln7.onrender.com/users", options);
 
     if (res.ok) {
         await set_local_storaage();

@@ -24,13 +24,13 @@ async function logout(){
 
 //dashboard statiscs 
 async function loadstatistics(){
-    let res=await fetch("http://localhost:5000/challenges");
+    let res=await fetch("https://codelearn-oln7.onrender.com/challenges");
     if(!res.ok){
         throw new Error("something went wrong");
     }
     let challengess=await res.json();
 
-    let res1=await fetch("http://localhost:5000/progress");
+    let res1=await fetch("https://codelearn-oln7.onrender.com/progress");
     if(!res1.ok){
         throw new Error("something went wrong");
     }

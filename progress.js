@@ -1,6 +1,6 @@
 async function fetch_progress() { 
     try{ 
-        let res=await fetch("http://localhost:5000/progress");
+        let res=await fetch("https://codelearn-oln7.onrender.com/progress");
         if(!res.ok){
             throw new Error("something went wrong");
         }
@@ -8,7 +8,7 @@ async function fetch_progress() {
         let id1=JSON.parse(localStorage.getItem("loggedInuser"));
 
 
-        let res1=await fetch("http://localhost:5000/challenges");
+        let res1=await fetch("https://codelearn-oln7.onrender.com/challenges");
         if(!res1.ok){
             throw new Error("something went wrong");
         }
